@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- DNS Prefetching -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+    <link rel="dns-prefetch" href="https://code.jquery.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://static.chartbeat.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://spreadsheets.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://spreadsheets.google.com" crossorigin>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css?updated">
+
+    <!-- High priority JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        // initilize webfonts
+        WebFont.load({
+            google: {
+                families: ['Open+Sans']
+            }
+        });
+    </script>
+
+    <!-- Title and native meta properties -->
+    <title>Pakistan Elections 2018 live results | Al Jazeera English</title>
+    <meta name="title" content="Live results: Pakistan Elections 2018">
+    <meta name="description" content="Minute by minute coverage of the Pakistan elections 2018. The main candidates in this year’s elections are: Pakistan Muslim League-Nawaz (PML-N), led by Nawaz Sharif, Pakistan Tehreek-e-Insaf (PTI) led by cricketer-turned-politician Imran Khan and Pakistan Peoples Party (PPP) lead by Bilawal Bhutto Zardari. This election will also be contested by a number of independents.">
+    <meta name="image" content="https://interactive.aljazeera.com/aje/2018/live-results-pakistan-election-day-2018/outside.jpg">
+    <meta name="author" content="Al Jazeera" />
+
+    <link rel="canonical" href="https://interactive.aljazeera.com/aje/2018/live-results-pakistan-election-day-2018/index.html"
+    />
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- Opengraph, Facebook & Twitter -->
+    <meta property="og:url" content="https://interactive.aljazeera.com/aje/2018/live-results-pakistan-election-day-2018/index.html">
+    <meta property="og:type" content="article.other" />
+    <meta property="og:title" content="Live results: Pakistan Elections 2018">
+    <meta property="og:image" content="https://interactive.aljazeera.com/aje/2018/live-results-pakistan-election-day-2018/outside.jpg"
+    />
+    <meta property="og:description" content="Minute by minute coverage of the Pakistan elections 2018. The main candidates in this year’s elections are: Pakistan Muslim League-Nawaz (PML-N), led by Nawaz Sharif, Pakistan Tehreek-e-Insaf (PTI) led by cricketer-turned-politician Imran Khan and Pakistan Peoples Party (PPP) lead by Bilawal Bhutto Zardari. This election will also be contested by a number of independents.">
+    <meta property="og:site_name" content="Al Jazeera">
+    <meta property="og:locale" content="en_US">
+    <!-- <meta property="article:author" content=""> -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AJEnglish" />
+    <!-- <meta name="twitter:creator" content="@individual_account"> -->
+    <meta name="twitter:url" content="https://interactive.aljazeera.com/aje/2018/live-results-pakistan-election-day-2018/index.html">
+    <meta name="twitter:title" content="Live results: Pakistan Elections 2018">
+    <meta name="twitter:description" content="Minute by minute coverage of the Pakistan elections 2018. The main candidates in this year’s elections are: Pakistan Muslim League-Nawaz (PML-N), led by Nawaz Sharif, Pakistan Tehreek-e-Insaf (PTI) led by cricketer-turned-politician Imran Khan and Pakistan Peoples Party (PPP) lead by Bilawal Bhutto Zardari. This election will also be contested by a number of independents.">
+    <meta property="twitter:image:src" content="https://interactive.aljazeera.com/aje/2018/live-results-pakistan-election-day-2018/outside.jpg"
+    />
+</head>
+
+<body>
+    <!-- nav start-->
+    <nav class="navbar sticky-top">
+        <div class="container-fluid">
+            <!-- map selector start -->
+            <div class="float-left navbar__map-selector">
+                <button id="map-selector" type="button" class="btn btn-sm btn-outline-dark">VIEW GEOGRAPHIC MAP</button>
+            </div>
+            <!-- map selector start -->
+
+            <!-- logo start -->
+            <div class="col navbar__logo-container">
+                <a class="navbar-brand" href="https://aljazeera.com" target="_blank">
+                    <img class="navbar__logo" src="assets/img/logo.svg" alt="Al Jazeera Logo">
+                </a>
+            </div>
+            <!-- logo end -->
+
+            <!-- year selector start -->
+            <div class="float-right navbar__year-selector">
+                <div id="year-selector" class="btn-group btn-group-sm" role="group" aria-label="Year selector">
+                    <button data-id="2018" type="button" class="btn btn-outline-dark">&nbsp;2018&nbsp;</button>
+                    <button data-id="2013" type="button" class="btn btn-outline-dark">&nbsp;2013&nbsp;</button>
+                    <button data-id="2008" type="button" class="btn btn-outline-dark">&nbsp;2008&nbsp;</button>
+                </div>
+            </div>
+            <!-- year selector end -->
+
+            <!-- hamburger menu for mobile devices start -->
+            <button type="button" class="btn btn-link float-right navbar__hamburger-menu" data-toggle="modal" data-target="#mobile-navigation-modal">
+                <img src="assets/img/hamburger.svg" />
+            </button>
+            <!-- hamburger menu for mobile devices end -->
+
+        </div>
+    </nav>
+    <!-- nav end-->
+
+    <!-- spinner start -->
+    <div id="main-loader" class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!-- spinner end-->
+
+    <!-- wrapper start -->
+    <div id="main-wrapper" class="container-fluid d-none fadein">
+        <div class="row">
+            <div class="container">
+                <!-- headline start -->
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center headline">Pakistan elections
+                            <span>2018</span>
+                        </h1>
+                        <h5 style="color:#212529; font-weight:400; padding-top:10px; padding-bottom:10px;" class="text-center">The map below will be updated as soon as official results are announced by the Election Commission
+                            of Pakistan.</h5>
+                        <p class="text-center">While you wait for the results, follow our
+                            <a href="https://www.aljazeera.com/news/2018/07/pakistan-elections-2018-latest-updates-180724055555410.html"
+                                target="_blank">Pakistan elections 2018 live coverage</a>
+                        </p>
+                        <div class="timestamp d-none">
+                            <time class="timeago" datetime=""></time>
+                        </div>
+                    </div>
+                </div>
+                <!-- headline end -->
+
+                <!-- geographic map view start -->
+                <div id="geo-map-view" class="d-none geo-view">
+                    <div id="geo-map" class="row geo-view__map">
+                        <div class="col geo-view__map-container">
+                            <img src="" class="geo-view__map-image" alt="Geograhical map for Pakistan election 2018">
+                        </div>
+                    </div>
+                </div>
+                <!-- geographic map view end -->
+
+                <!-- cartographic map view start -->
+                <div id="carto-map-view" class="carto-view">
+
+                    <!-- party legends mobile start -->
+                    <div id="party-legends-mobile" class="row party-legends-mobile">
+                        <ul class="party-legends__list">
+                        </ul>
+                    </div>
+                    <!-- party legends mobile end -->
+
+                    <!-- summary widget start -->
+                    <div data-id="2018" class="wrapper widget live-widget d-none">
+                        <div class="clearfix">
+                            <div id="PPP" class="box">
+                                <div class="seats-won">&nbsp;</div>
+                                <div class="party-name">
+                                    <span>PPP</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/bilawal.png" />
+                                </div>
+                            </div>
+                            <div id="PTI" class="box">
+                                <div class="seats-won">&nbsp;</div>
+                                <div class="party-name">
+                                    <span>PTI</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/imran.png" />
+                                </div>
+                            </div>
+                            <div id="PMLN" class="box">
+                                <div class="seats-won">&nbsp;</div>
+                                <div class="party-name">
+                                    <span>PML-N</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/shehbaz.png" />
+                                </div>
+                            </div>
+                            <div id="OTHERS" class="box">
+                                <div class="seats-won">&nbsp;</div>
+                                <div class="party-name">
+                                    <span>OTHERS</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/others.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-id="2013" class="wrapper widget static-widget d-none">
+                        <div class="clearfix">
+                            <div class="box ppp">
+                                <div class="seats-won">33</div>
+                                <div class="party-name">
+                                    <span>PPP</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/zardari-2013.png" />
+                                </div>
+                            </div>
+                            <div class="box pti">
+                                <div class="seats-won">28</div>
+                                <div class="party-name">
+                                    <span>PTI</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/imran-2013.png" />
+                                </div>
+                            </div>
+                            <div class="box pmln">
+                                <div class="seats-won">126</div>
+                                <div class="party-name">
+                                    <span>PML-N</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/nawaz-2013.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-id="2008" class="wrapper widget static-widget d-none">
+                        <div class="clearfix">
+                            <div class="box ppp">
+                                <div class="seats-won">91</div>
+                                <div class="party-name">
+                                    <span>PPP</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/gillani-2008.png" />
+                                </div>
+                            </div>
+                            <div class="box pmlq">
+                                <div class="seats-won">38</div>
+                                <div class="party-name">
+                                    <span>PML-Q</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/shujaat-2008.png" />
+                                </div>
+                            </div>
+                            <div class="box pmln">
+                                <div class="seats-won">69</div>
+                                <div class="party-name">
+                                    <span>PML-N</span>
+                                </div>
+                                <div class="leader-image">
+                                    <img src="assets/img/nawaz-2008.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- summary widget end -->
+
+                    <!-- cartogram start -->
+                    <div id="carto-map" class="row carto-view__map">
+                        <div class="col carto-view__map-container">
+
+                        </div>
+                    </div>
+                    <!-- cartogram end -->
+
+                    <!-- party legends start -->
+                    <div id="party-legends" class="row party-legends">
+                        <ul class="party-legends__list">
+                        </ul>
+                    </div>
+                    <!-- party legends end -->
+                    <div class="explain-the-map">
+                        <br>
+                        <a data-toggle="collapse" href="#explainmap">ⓘ Why does the map look like this?</a>
+                        <div class="collapse explain-map-box" id="explainmap">
+                            <p>The map above is what’s known as a cartogram. Rather than using the geographic size of a province,
+                                hexagons are drawn to represent the 272 contestable seats in Pakistan’s National Assembly.
+                                Large provinces with small populations such as Balochistan will appear smaller while very
+                                dense provinces such as Punjab and Sindh appear bigger.
+                                <a href="https://medium.com/@ajlabs/f00692aa0761/">Read more about this process.</a>
+                            </p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="more-about-the-elections">
+                        <h3 class="h3">Everything you need to know about the elections</h3>
+                        <p>Home to 207 million people, Pakistan is the world’s sixth-largest country by population and plays
+                            a crucial role in geopolitics in South Asia. On Some 106 million registered voters will elect
+                            a new government in a rare democratic transition of power.
+                            <p>People began voting on Wednesday at 8am local time (03:00GMT) to send 272 representatives to
+                                the National Assembly. Polls closed at 6pm (13:00GMT) across 85,000 polling stations manned
+                                by up to 800,000 police and military forces. Counting of votes is under way and unofficial
+                                results from various constituencies are being announced by local media.</p>
+                            <p class="h5">
+                                <a href="https://www.aljazeera.com/indepth/interactive/2018/07/pakistan-elections-2018-glance-180715170819239.html"
+                                    target="_blank">Infographic: Pakistan elections at a glance</a>
+                            </p>
+
+                            <p>The main candidates in this year’s elections are: Pakistan Muslim League-Nawaz (PML-N), led by
+                                Nawaz Sharif, Pakistan Tehreek-e-Insaf (PTI) led by cricketer-turned-politician Imran Khan
+                                and Pakistan Peoples Party (PPP) lead by Bilawal Bhutto Zardari. This election will also
+                                be contested by a number of independents.</p>
+                            <p class="h5">
+                                <a href="https://www.aljazeera.com/indepth/interactive/2018/07/pakistan-elections-2018-major-political-parties-180711093002581.html"
+                                    target="_blank">Infographic: Who are the main candidates and where do they stand?</a>
+                            </p>
+
+                            <!-- <p>For live coverage of the elections visit <a href="https://www.aljazeera.com/news/2018/07/pakistan-elections-2018-latest-updates-180724055555410.html" target="_blank">Pakistan elections 2018: All the latest updates</a></p> -->
+                            <hr>
+
+
+                    </div>
+                    <!-- provincial tabs start -->
+                    <div id="provincial-tabs" class="provincial-tabs">
+                        <nav>
+                            <div class="provincial-tabs__nav nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-kpk-tab" data-id="nav-kpk" data-province-name="KPK" data-toggle="tab" href="#nav-kpk"
+                                    role="tab" aria-controls="nav-kpk" aria-selected="true">KPK</a>
+                                <a class="nav-item nav-link" id="nav-tribal-areas-tab" data-id="nav-tribal-areas" data-province-name="Tribal Areas" data-toggle="tab"
+                                    href="#nav-tribal-areas" role="tab" aria-controls="nav-tribal-areas" aria-selected="false">TRIBAL
+                                    <br/> AREAS</a>
+                                <a class="nav-item nav-link" id="nav-capital-territory-tab" data-id="nav-capital-territory" data-province-name="Capital Territory"
+                                    data-toggle="tab" href="#nav-capital-territory" role="tab" aria-controls="nav-capital-territory"
+                                    aria-selected="false">ISLAMABAD
+                                    <br/>CAPITAL
+                                    <br/> TERRITORY</a>
+                                <a class="nav-item nav-link" id="nav-punjab-tab" data-toggle="tab" data-id="nav-punjab" data-province-name="Punjab" href="#nav-punjab"
+                                    role="tab" aria-controls="nav-punjab" aria-selected="false">PUNJAB</a>
+                                <a class="nav-item nav-link" id="nav-sindh-tab" data-toggle="tab" data-id="nav-sindh" data-province-name="Sindh" href="#nav-sindh"
+                                    role="tab" aria-controls="nav-sindh" aria-selected="false">SINDH</a>
+                                <a class="nav-item nav-link" id="nav-balochistan-tab" data-toggle="tab" data-id="nav-balochistan" data-province-name="Balochistan"
+                                    href="#nav-balochistan" role="tab" aria-controls="nav-balochistan" aria-selected="false">BALOCHISTAN</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content provincial-tabs__content" id="nav-tabContent">
+                            <div class="tab-pane show active" id="nav-kpk" role="tabpanel" aria-labelledby="nav-kpk-tab">
+                                <h2 class="provincial-tab-heading">KHYBER PAKHTUNKHWA</h2>
+                                <span class="tab-search float-right">
+                                    <input type="text" class="search-box" placeholder="Search constituency">
+                                </span>
+
+                                <div class="provincial-tab-content">
+                                </div>
+                            </div>
+                            <div class="tab-pane show" id="nav-tribal-areas" role="tabpanel" aria-labelledby="nav-tribal-areas-tab">
+                                <h2 class="provincial-tab-heading">TRIBAL AREAS</h2>
+                                <span class="tab-search float-right">
+                                    <input type="text" class="search-box" placeholder="Search constituency">
+                                </span>
+                                <div class="provincial-tab-content"></div>
+                            </div>
+                            <div class="tab-pane show" id="nav-capital-territory" role="tabpanel" aria-labelledby="nav-capital-territory-tab">
+                                <h2 class="provincial-tab-heading">ISLAMABAD CAPITAL TERRITORY</h2>
+                                <span class="tab-search float-right">
+                                    <input type="text" class="search-box" placeholder="Search constituency">
+                                </span>
+                                <div class="provincial-tab-content"></div>
+                            </div>
+                            <div class="tab-pane show" id="nav-punjab" role="tabpanel" aria-labelledby="nav-punjab-tab">
+                                <h2 class="provincial-tab-heading">PUNJAB</h2>
+                                <span class="tab-search float-right">
+                                    <input type="text" class="search-box" placeholder="Search constituency">
+                                </span>
+                                <div class="provincial-tab-content"></div>
+                            </div>
+                            <div class="tab-pane show" id="nav-sindh" role="tabpanel" aria-labelledby="nav-sindh-tab">
+                                <h2 class="provincial-tab-heading">SINDH</h2>
+                                <span class="tab-search float-right">
+                                    <input type="text" class="search-box" placeholder="Search constituency">
+                                </span>
+                                <div class="provincial-tab-content"></div>
+                            </div>
+                            <div class="tab-pane show" id="nav-balochistan" role="tabpanel" aria-labelledby="nav-balochistan-tab">
+                                <h2 class="provincial-tab-heading">BALOCHISTAN</h2>
+                                <span class="tab-search float-right">
+                                    <input type="text" class="search-box" placeholder="Search constituency">
+                                </span>
+                                <div class="provincial-tab-content"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- provincial tabs end -->
+                </div>
+                <!-- cartographic map view end-->
+            </div>
+        </div>
+    </div>
+    <!-- wrapper end -->
+
+    <!-- accumulate modals here -->
+    <div id="mobile-navigation-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <form id="mobile-navigation-content">
+                                <div class="form-group" style="margin-bottom:4rem">
+                                    <label for="exampleInputEmail1">Select map type</label>
+                                    <div id="map-selector-mobile" class="btn-group-vertical" role="group" aria-label="Year selector">
+                                        <button data-id="2018" type="button" class="btn btn-outline-dark">&nbsp;Geographical map&nbsp;</button>
+                                        <button data-id="2013" type="button" class="btn btn-outline-dark">&nbsp;Potilical cartogram&nbsp;</button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Select election year</label>
+                                    <div id="year-selector-mobile" class="btn-group-vertical" role="group" aria-label="Year selector">
+                                        <button data-id="2018" type="button" class="btn btn-outline-dark">&nbsp;2018&nbsp;</button>
+                                        <button data-id="2013" type="button" class="btn btn-outline-dark">&nbsp;2013&nbsp;</button>
+                                        <button data-id="2008" type="button" class="btn btn-outline-dark">&nbsp;2008&nbsp;</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- accumulate modals here -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js " integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm "
+        crossorigin="anonymous "></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.3/jquery.timeago.min.js"></script>
+    <!-- jQuery assets end -->
+    <script src="assets/js/app.js?update"></script>
+
+
+    <!--Chartbeat AJE header -->
+    <script type="text/javascript">
+        var _sf_startpt = (new Date()).getTime()
+    </script>
+    <!--GOOGLE ANALYTICS AJE -->
+    <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-1615344-7', { 'allowAnchor': true });
+        ga('send', 'pageview', {
+            'page': location.pathname + location.search + location.hash
+        });
+    </script>
+    <!--CHARTBEAT AJE -->
+    <script type='text/javascript'>
+        var _sf_async_config = {};
+        //* CONFIGURATION START *
+        _sf_async_config.uid = 3291;
+        _sf_async_config.domain = 'aljazeera.com';
+        _sf_async_config.useCanonical = true;
+        _sf_async_config.sections = 'AJ Labs';
+        _sf_async_config.authors = 'AJ Labs';
+        _sf_async_config.title = "Live results: Pakistan Elections 2018";
+        //* CONFIGURATION END
+        (function () {
+            function loadChartbeat() {
+                window._sf_endpt = (new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+                document.body.appendChild(e);
+            }
+            var oldonload = window.onload;
+            window.onload = (typeof window.onload != 'function') ?
+                loadChartbeat : function () { oldonload(); loadChartbeat(); };
+        })();
+    </script>
+</body>
+
+</html>

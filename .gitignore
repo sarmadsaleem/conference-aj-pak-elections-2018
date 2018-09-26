@@ -1,0 +1,36 @@
+# ----------
+# OSX Files
+# ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+Icon
+
+
+# -----------
+# Node Files
+# -----------
+.nodemonignore
+npm-debug.log
+node_modules/
+puppeteer-script/node_modules
+
+# ----------------
+# Project Specific
+# ----------------
+puppeteer-script/screenshots/
+puppeteer-script/fallback_json/
+
+
+#-----------
+# Build files
+#-----------
+.cache
+.notes
+
+appcut.html
+appcut.js
